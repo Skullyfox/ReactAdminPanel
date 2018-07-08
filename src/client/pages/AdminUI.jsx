@@ -6,9 +6,6 @@ import AdminUIDashboard from '../components/AdminUI/AdminUIDashboard.jsx';
 class AdminUI extends Component {
     constructor(props){
         super(props);
-        this.state = {
-            Home: true,
-        }
     }
 
     render() {
