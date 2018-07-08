@@ -1,4 +1,6 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import AdminUI from './pages/AdminUI.jsx';
 
 class App extends React.Component {
     constructor(props) {
@@ -7,7 +9,13 @@ class App extends React.Component {
 
     render() {
         return (
-            <h1>Hello World</h1>
+            <Router>
+                <React.Fragment>
+                    <Switch>
+                        <Route path="/adminpanel" component={AdminUI}/>
+                    </Switch>
+                </React.Fragment>
+            </Router>
         )
     }
 }

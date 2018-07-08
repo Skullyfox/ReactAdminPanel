@@ -315,6 +315,41 @@ a, a:hover, a:visited {
     .container {
       max-width: 900px; } }
 
+#AdminUI {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 20% 80%; }
+  #AdminUI * {
+    box-sizing: border-box; }
+
+#NavSide {
+  display: grid;
+  grid-row-template: repeat(5, 20%);
+  height: 100vh;
+  width: 100%;
+  box-shadow: 5px 0px 10px #333;
+  background-color: #222; }
+
+.navItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 1.3em;
+  color: #fff;
+  transition: all .3s; }
+  .navItem:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #222; }
+
+#AdminUIDashboard {
+  height: 100vh;
+  width: 100%;
+  padding: 20px;
+  overflow-y: scroll; }
+
 html {
   font-size: 12px; }
   @media screen and (min-width: 350px) {
